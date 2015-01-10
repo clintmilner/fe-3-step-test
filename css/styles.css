@@ -1,0 +1,57 @@
+body{
+  text-align:center;
+}
+.e{
+  padding:50px;
+  border: 1px solid black;
+  border-radius:20px;
+  display:inline-block;
+  margin:30px;
+}
+.nvTt {
+	-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	border: 1px solid #cccccc;
+	width:auto;
+	max-width:400px;
+	min-width:100px;
+	min-height:33px;
+	position:absolute;
+	background-color:#fff;
+	z-index:9999;
+}
+.nvTt .nvTt--corner{
+	display:inline-block;
+	/*background-image: url("../images/nvidia-core-images.png");*/
+	width:36px;
+	height:32px;
+	margin-left:-1px;
+	margin-top:-1px;
+	float: left;
+}
+.nvTt .nvTt--u {
+	margin: 8px 12px 8px 40px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	color:#777;
+    line-height: 14px;
+}
+.nvTt .nvTt--info {
+	/*background-position: 0px -298px;*/
+	background:#fff url('../images/info-tooltip.jpg') no-repeat;
+}
+.nvTt .nvTt--error {
+	/*background-position: 0px -251px;*/
+	background:#fff url('../images/error-tooltip.jpg') no-repeat;
+}
+.nvTt .nvTt--warning {
+	/*background-position: 0px -345px;*/
+	background:#fff url('../images/warning-tooltip.jpg') no-repeat;
+}
+
+
+
+
+
