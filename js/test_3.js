@@ -7,7 +7,33 @@
  *
  * Dependencies: jQuery, Template.js
  *
- * Markup Example: <div class="tooltip" data-msg="Here is text for a tooltip" data-type="info">Lorem Ipsum</div>
+ * Markup Example: <div class="tooltip" data-msg="Here is text for a tooltip" data-type="info">Lorem Ipsum</div>*
+ */
+
+
+ /** ==== EMAIL TO MANAGEMENT ====
+  *
+  *
+  * Dear Manager,
+  *
+  * I was successful in un-minify-ing the JavaScript. Code has been
+  * commented, variables have been renamed, and in some instances,
+  * I moved variable declarations around to keep them in more
+  * appropriate scopes. I've also wrapped the entire file
+  * in a closure to keep these variables out of the global scope.
+  *
+  * I also made a small change in HTML/CSS file to more descriptively describe
+  * the tooltip class.
+  *
+  * Overall, code all the aspects of the code should be easier to read for
+  * future development.
+  *
+  * Any questions with the syntax, usage, or changes, please don't
+  * hesitate to find me. You can also find the repo history of these
+  * files on my GitHub page https://github.com/clintmilner/fe-3-step-test
+  *
+  * Regards,
+  * Clint Milner
  */
 
 (function(){
@@ -41,7 +67,7 @@
         // create randomised id for tooltip element
         id = "tt" + Math.floor( Math.random() * 1e4 );
 
-        // assign the tooltip to the msg variable
+        // assign the tooltip text to the msg variable
         msg = elem.attr( "data-msg" ).split( "<br/>" );
 
         // build up tooltip object for templating
@@ -64,8 +90,8 @@
     }
     function removeTooltip()
     {
-        // remove the tooltip; fading it out before
-        // removing it from the DOM
+        // remove the tooltip; fading it out
+        // before removing it from the DOM
         $( "#" + id ).stop( true, false )
             .fadeOut( 200,
             function ()
@@ -98,4 +124,5 @@
             removeTooltip();
         });
     });
+
 })();
