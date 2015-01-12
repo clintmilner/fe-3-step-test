@@ -1,0 +1,219 @@
+
+    * { box-sizing: border-box; }
+    .col {
+        margin: 1%;
+        /*margin: 1% 0 1% 0%;*/
+    }
+    .span_1_of_2 { padding: 1%; }
+    .span_2_of_2 {  }
+    .span_2_of_2, .span_1_of_2 { width: 98%;}
+
+
+    body { background: #101010 }
+    h1,h2,h3,h4,h5,h6 { text-transform: uppercase; color: #fcfcfc; }
+    section{ background: #444; padding: 0.25em 0.5em; margin: 0 auto 1% auto; border: 1px solid #ccc; overflow: hidden; }
+    section img { float: right; margin: 3px; border: 1px dashed #ccc; }
+    aside {
+        background: lightcoral;
+        text-align: center;
+        overflow: hidden;
+    }
+    aside ul {
+        margin: 0;
+        padding: 0;
+
+    }
+    aside li {
+        float: left;
+        list-style: none;
+        margin: 0 1.5%;
+
+    }
+    aside li a {
+        line-height: 1.5em;
+        text-transform: uppercase;
+        /*padding: 5px;*/
+        text-decoration: none;
+        color: #fcfcfc;
+
+    }
+    aside li a:hover {
+        border-bottom: 1px dashed #fcfcfc;
+    }
+    img { max-width: 100%; height: auto; }
+    .stats {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        background: #404040;
+    }
+    .stats ul { padding: 0; margin: 0; }
+    .stats li {
+        display: inline-block;
+        padding: 0.5em 0;
+        width: 20%;
+        /*min-height: 80px;*/
+        float: left;
+        font-size: 0.75em;
+        color: #fff;
+        text-align: center;
+    }
+    .stats li span {
+        font-size: 1.8em;
+        width: 100%;
+        color: grey;
+        display: block;
+        margin: 10% 0 0 0;
+        text-transform: uppercase;
+    }
+
+
+@media (min-width: 800px) {
+    aside ul {
+        float: left;
+        padding: 0;
+    }
+    aside li {
+        background: none repeat scroll 0 0 red;
+        float: left;
+        height: 1em;
+        line-height: 1em;
+        margin: 0 0 1% 0;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+    aside li {
+        display: block;
+        height: 2.5em;
+        line-height: 2.5em;
+        text-align: left;
+
+    }
+    aside li a {
+        display: block;
+        height: 2.5em;
+        line-height: 2.5em;
+        padding: 0 0 0 10%;
+    }
+    aside li a:hover {
+        background: lightcoral;
+        border-bottom: none;
+    }
+
+    .section {
+        clear: both;
+        padding: 0px;
+        margin: 0px;
+    }
+    .stats {
+        /*display: block;*/
+        /*width: 100%;*/
+        /*overflow: hidden;*/
+        /*background: #444;*/
+    }
+    .stats li {
+        /*width: 20%;*/
+        /*min-height: 80px;*/
+        /*float: left;*/
+        font-size: 0.8em;
+        /*color: #fff;*/
+        /*text-align: center;*/
+    }
+    .stats li span {
+        font-size: 1.8em;
+        /*width: 100%;*/
+        /*color: grey;*/
+        /*display: block;*/
+        /*margin: 15% 0 0 0;*/
+    }
+
+    /*  COLUMN SETUP  */
+    .col {
+        display: block;
+        float:left;
+        /*margin: 1% 0 1% 3%;*/
+        margin: 1%;
+    }
+    /*.col:first-child { margin-left: 0; }*/
+
+    /*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both; }
+    .group { zoom:1; /* For IE 6/7 */ }
+
+    /*  GRID OF TWO  */
+    .span_2_of_2 {
+        width: 70%;
+        padding: 0;
+    }
+    .span_1_of_2 {
+        width: 25%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== GRID STUFF ==== */
+/*  SECTIONS  */
+/** { box-sizing: border-box; }*/
+/*.section {*/
+    /*clear: both;*/
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+/*}*/
+
+/*  COLUMN SETUP  */
+/*.col {*/
+    /*display: block;*/
+    /*float:left;*/
+    /*margin: 1% 0 1% 3%;*/
+    /*margin: 1%;*/
+/*}*/
+/*.col:first-child { margin-left: 0; }*/
+
+/*  GROUPING  */
+/*.group:before,*/
+/*.group:after { content:""; display:table; }*/
+/*.group:after { clear:both; }*/
+/*.group { zoom:1; *//* For IE 6/7 *//* }*/
+
+/*  GRID OF TWO  */
+/*.span_2_of_2 {*/
+    /*width: 70%;*/
+/*}*/
+/*.span_1_of_2 {*/
+    /*width: 25%;*/
+    /*padding: 1%;*/
+/*}*/
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+/*@media only screen and (max-width: 480px) {*/
+    /*.col {*/
+        /*margin: 1%;*/
+        /*margin: 1% 0 1% 0%;*/
+    /*}*/
+    /*.span_1_of_2 { background: dodgerblue; }*/
+
+    /*.span_2_of_2, .span_1_of_2 { width: 98%; }*/
+/*}*/

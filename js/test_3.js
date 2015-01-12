@@ -16,7 +16,7 @@
   *
   * Dear Manager,
   *
-  * I was successful in un-minify-ing the JavaScript. Code has been
+  * I was successful in un-minify-ing the Javascript. Code has been
   * commented, variables have been renamed, and in some instances,
   * I moved variable declarations around to keep them in more
   * appropriate scopes. I've also wrapped the entire file

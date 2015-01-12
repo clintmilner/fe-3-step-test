@@ -1,0 +1,79 @@
+1) What have you learnt in the way of web development in the past month? 
+Currently I have been experimenting with the Gulp.js build system and working on a template of files and directories that I can pull down
+and start development locally in a matter of minutes.
+
+
+
+2) Make the following array duplicate, attached the duplicated values onto the end;
+                var array = ["a","b","c",1,2,3,4,5]; 
+
+array.concat( array );
+
+
+
+3) How would you optimise the following?
+        $(array).each(function(data){
+            $("body").append(data);
+        });
+
+var $body = $( 'body' ),
+    arrayString;
+
+for( var i = 0; i < array.length; i++ )
+{
+    arrayString += array[i];
+}
+$body.append( arrayString );
+
+
+
+4) What will be shown to the user?
+var array = ["a","b","c",1,2,3];
+alert(array[2]);
+
+c
+
+
+
+5) What is the use or are some uses of data attributes in HTML?
+Data attributes provide a way to attach more information to an HTML element which could be used as metadata within a function,
+or a data attribute can also have an event listener attached to it using Javascript.
+
+
+
+6) What would be your process in analysing and fixing a front-end bug (HTML, CSS, JavaScript) in production? What tools or process would you use?
+After listening/reading about the bug, I would try to recreate in a browser, or preferably multiple browsers. I would look at a Javascript console
+next to see if there are any errors or warnings that might be picked up by the browser. I'd also check the HTML to make sure that the
+JS and CSS files have been included correctly and that the browser is returning a 200 code for every file. CSS bugs can be troubleshooted using
+the inspector, and 'debugger', 'alert' or 'console' messages can be used in the Javascript.
+
+
+7) How would you target a device with a screen size of 600px and below? 
+Adding a screen media query in the CSS:
+
+@media only screen and (max-width: 600px)
+
+
+8) Does the following trigger a HTML request?                
+<div style="display:none;">
+   <img src="image.jpg" alt="Image" />
+</div>
+
+Yes, the image source will attempt to download even if its parent element will be hidden on the page.
+
+
+
+9) Describe the differences between feature detection and using the UA string
+Feature Detection is usually done by a library it checks to see if a specific method exists in a browser.
+UA String analysis is an older way of trying to determine which browser is being used. It doesn't tell you
+if a browser has a certain feature.
+
+
+
+10) Explain what this CSS selector is doing  
+[role=navigation] > p a:not([href^=mailto]){}
+
+This CSS selector will target direct children of the element that has the ARIA tag of role=navigation. These
+children will be a <p> tag surrounding an <a> tag, but only anchor tags that DON'T have a mailto href will be targeted.
+
+

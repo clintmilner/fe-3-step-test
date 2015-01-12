@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Clint Milner Filter Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='css/normalize.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/styles.css' type='text/css' media='all' />
+</head>
+<body>
+<div class="section group">
+    <aside class="col span_1_of_2">
+        <h3>Filter your Selection</h3>
+        <ul>
+            <li><a class="filter" href="javascript:void(0);" data-filter="family">Family</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="form">Form</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="series">Series</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="sli">SLI</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="physx">Physx</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="cores">Cuda Cores</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="speed">Clock Speed</a></li>
+            <li><a class="filter" href="javascript:void(0);" data-filter="memory">Memory</a></li>
+        </ul>
+    </aside>
+    <div id="listings" class="col span_2_of_2">
+
+    </div>
+</div>
+<script src="js/lib/jquery-1.10.1-migrate.js"></script>
+<script src="js/filterWidget.js"></script>
+</body>
+</html>
