@@ -1,30 +1,30 @@
-
+/**
+ *
+ * FilterWidget
+ *
+ * Status: Incomplete
+ *
+ * Due to time restraints, I wasn't able to finish this part of the test. The templating engine is functional,
+ * and can parse out an HTML string using the data from the JSONP call and some static HTML. I'm not using
+ * any external libraries, but ideally, I would have used Moustache or Underscore for templating.
+ * I would have liked more time to get the filters working, as well as adding CSS polish, but the filters
+ * are responsive, and the skeleton is there for the rest of the Javascript functionality.
+ *
+ */
 (function()
 {
     var tmplBuilder = function( itemObj )
     {
         var currencySymbol = '£';
-        //console.log( itemObj.image );
-        //console.log( itemObj.family );
-        //console.log( itemObj.form );
-        //console.log( itemObj.retailers.amazon.link );
-        //console.log( itemObj.retailers.amazon.name );
-        //console.log( currencySymbol+itemObj.retailers.amazon.price );
-        //console.log( itemObj.retailers.bestbuy.price );
-        //console.log( itemObj.details );
-        //console.log( itemObj.specifications.clockSpeed );
-        //console.log( itemObj.specifications.cudaCores );
-        //console.log( itemObj.specifications.memory );
-        //console.log( itemObj.technologies.physx );
-        //console.log( itemObj.technologies.sli );
 
-        var tmpl = '<section data-sli="' + itemObj.technologies.sli + '"><img src="' + itemObj.image + '" alt="' + itemObj.name + '" />' +
-            '<h2>' + itemObj.name + '</h2><p><span>' + itemObj.family + '</span> graphics card for' +
-            ' your <span>' + itemObj.form + '</span> machine. Buy now from ' +
-            '<a href="' + itemObj.retailers.amazon.link + '">' + itemObj.retailers.amazon.name + ' for' +
-            ' <span>' + currencySymbol + itemObj.retailers.amazon.price + '</span></a> or ' +
-            '<a href="' + itemObj.retailers.bestbuy.link + '">' + itemObj.retailers.bestbuy.name + ' for ' +
-            '<span>' + currencySymbol + itemObj.retailers.bestbuy.price + '</span></a>.</p> ' +
+        var tmpl =
+            '<section data-sli="' + itemObj.technologies.sli + '">' +
+            '<img src="' + itemObj.image + '" alt="' + itemObj.name + '" />' +
+            '<h2>' + itemObj.name + '</h2>' +
+            '<p>' + itemObj.family + ' graphics card for your ' + itemObj.form + ' machine. ' +
+            'Buy now from <a href="' + itemObj.retailers.amazon.link + '">' + itemObj.retailers.amazon.name + ' for ' +
+            currencySymbol + itemObj.retailers.amazon.price + '</a> or <a href="' + itemObj.retailers.bestbuy.link + '">' +
+            itemObj.retailers.bestbuy.name + ' for ' + currencySymbol + itemObj.retailers.bestbuy.price + '</a>.</p> ' +
             '<p class="viewMore"><a href="'+ itemObj.details + '">View Full Details</a></p>' +
             '<div class="stats"><ul><li>Clock Speed: <span>' + itemObj.specifications.clockSpeed + '</span></li>' +
             '<li>Cuda Cores: <span>' + itemObj.specifications.cudaCores + '</span></li>' +
@@ -68,7 +68,6 @@
                 }
 
                 $galleryContainer.append( gallery );
-
             }
             else
             {
