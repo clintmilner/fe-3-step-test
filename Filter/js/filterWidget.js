@@ -43,14 +43,9 @@
             var $item = $( galleryItems[i] ),
                 filter = 'data-' + $filter.data( 'filter' );
 
-            console.log( $item.attr( 'data-' + $filter.data('filter') ) );
-            console.log( filter + '="false"' );
-
-
             if( $item.attr( filter + '="false"' ) )
             {
                 $item.hide();
-                console.log( $item );
             }
         }
 
@@ -96,8 +91,6 @@
         {
             if( e !== undefined ){ e.preventDefault(); }
             var $filter = $( e.target );
-
-            console.info( $filter.data( 'filter' ) );
 
             filterResults( $filter );
         }
